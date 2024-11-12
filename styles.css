@@ -5,7 +5,7 @@
 body { 
    background-color: white;
    margin: 0;
-   height: 999vh;
+   height: fit-content;
 }
 
 #topnav {
@@ -407,7 +407,7 @@ h2 {
 
 .contact .idek {
     
-    height: 10vh;
+    height: fit-content;
     text-align: center;
     align-self: center;
     background-color: rgba(255, 255, 255, 0.5);
@@ -481,4 +481,415 @@ h2 {
     
 }
 
+footer { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
 
+footer h2, footer p:first-of-type {
+    font-style: italic;
+}
+
+
+
+
+/* Tablet Styles */
+@media screen and (min-width:520px) and (max-width:1024px) {
+
+ #topnav {
+    height: 10vh;
+}
+.navbutton {
+    font-size: 16px;
+    padding: .5em 1em;
+}
+
+
+header {
+    font-size: 30px;
+    height: 50vh;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 2em;
+}
+
+header p {
+    font-size: 1em;
+    margin-top: 1.5em;
+}
+
+.tcard-container {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.tcard {
+    width: 80%;
+    height: auto;
+    margin-bottom: 2em;
+}
+
+.tcard h2 {
+    font-size: 1.5em;
+}
+
+.tcard p {
+    font-size: 0.9em;
+}
+
+.tcard a {
+    padding: 0.7em 1.5em;
+    font-size: 1em;
+}
+
+
+.tcard-container-p2 {
+    width: 100%;
+
+    flex-direction: column;
+    align-items: center;
+}
+
+.thcard {
+    width: 80%;
+    margin-bottom: 2em;
+    height: fit-content;
+}
+
+.thcard h2 {
+    font-size: 1.5em;
+}
+
+.thcard p {
+    font-size: 1em;
+}
+
+.thcard a {
+    font-size: 1.1em;
+    padding: 0.7em 1.5em;
+}
+
+.long-service {
+    height: 35vh;
+}
+
+.long-service h2 {
+    font-size: 2em;
+}
+
+.long-service p {
+
+    font-size: 1em;
+    max-width: 70%;
+}
+
+
+.bcard-container {
+    flex-direction: column;
+    align-items: center;
+}
+
+.bcard {
+    width: 80%;
+    margin-bottom: 2em;
+    height: 60vh;
+}
+
+.bcard h2 {
+    font-size: 1.2em;
+}
+
+.bcard p {
+    font-size: 0.9em;
+}
+
+.bcard a {
+    padding: 0.7em 1.5em;
+    font-size: 1em;
+
+}
+
+.bcard-container-p2 {
+    flex-direction: column;
+    align-items: center;
+}
+
+.bfcard {
+    width: 80%;
+    height: fit-content;
+}
+
+.bfcard h2 {
+    font-size: 1.5em;
+}
+
+.bfcard p {
+    font-size: 1em;
+}
+
+.bfcard a {
+    font-size: 1.1em;
+
+}
+
+.contact-container {
+    height: auto;
+    padding: 3em 0;
+}
+
+.contact h2 {
+    font-size: 1.5em;
+}
+
+.forms {
+    flex-direction: column;
+    align-items: center;
+    margin-left:0;
+}
+.idek { 
+    height: 40vh;
+
+    margin:0;
+}
+
+#left-f, #right-f {
+    width: 100%;
+    margin-left:0;
+}
+
+.left-i {
+    padding: 0.5em;
+    font-size: 1em;
+    margin-left:0;
+}
+
+#Yourmessage {
+    font-size: 1em;
+}
+
+#right-f a {
+    font-size: 1.1em;
+}
+
+.idek p {
+    margin-left: .5em;
+}
+
+}
+
+
+
+
+
+
+
+
+
+/* Mobile Styles */
+@media screen and  (max-width:520px) {
+    #topnav {
+
+        height: 12vh;
+        flex-direction: row;
+        justify-content: center;
+
+
+    }
+
+    .navbutton {
+        font-size: 12px;
+        padding: .5em 1.2em;
+
+        margin: .5em 0;
+    }
+
+ 
+
+    header {
+        font-size: 25px;
+        height: 50vh;
+        padding: 2em 0;
+    }
+
+    header h1 {
+        font-size: 2.2em;
+        margin-bottom: 1.5em;
+
+    }
+
+    header p {
+        font-size: 0.9em;
+        margin-top: 1.5em;
+
+
+    }
+
+
+    .tcard-container {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+
+    }
+
+    .tcard {
+        width: 90%;
+        height: auto;
+        margin-bottom: 2em;
+    }
+
+    .tcard h2 {
+        font-size: 1.2em;
+
+
+    }
+
+
+    .tcard p {
+        font-size: 0.9em;
+    }
+
+    .tcard a {
+        padding: 0.7em 1.4em;
+        font-size: 1em;
+    }
+
+
+    .tcard-container-p2 {
+        width: 100%;
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .thcard {
+
+        width: 90%;
+        margin-bottom: 2em;
+    }
+
+    .thcard h2 {
+        font-size: 1.4em;
+    }
+
+    .thcard p {
+        font-size: 1em;
+    }
+
+    .thcard a {
+        font-size: 1.1em;
+        padding: 0.7em 1.5em;
+    }
+
+
+    .long-service {
+        height: auto;
+        padding: 2em 0;
+    }
+
+    .long-service h2 {
+        font-size: 1.8em;
+
+    }
+
+    .long-service p {
+        font-size: 0.9em;
+        max-width: 80%;
+    }
+
+    .bcard-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bcard {
+        width: 90%;
+        margin-bottom: 2em;
+
+    }
+
+    .bcard h2 {
+        font-size: 1.2em;
+    }
+
+    .bcard p {
+        font-size: 0.9em;
+    }
+
+    .bcard a {
+        padding: 0.7em 1.5em;
+
+
+        font-size: 1em;
+    }
+
+    .bcard-container-p2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bfcard {
+        width: 90%;
+
+        height: 130vh;
+    }
+
+    .bfcard h2 {
+        font-size: 1.3em;
+    }
+
+    .bfcard p {
+        font-size: 1em;
+    }
+
+    .bfcard a {
+        font-size: 1.1em;
+    }
+
+    .contact-container {
+        height: auto;
+        padding: 2em 0;
+    }
+
+    .contact h2 {
+
+        font-size: 1.5em;
+    }
+    .idek p {
+        margin-left: .5em;
+    }
+    .forms {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    #left-f, #right-f {
+        width: 90%;
+        margin-bottom: 1em;
+        margin-left: 0;
+    }
+
+   
+    
+    .left-i {
+        padding: 0.5em;
+        font-size: 1em;
+        margin-left: 0;
+    }
+
+    #Yourmessage {
+        font-size: 1em;
+        text-wrap: wrap;
+    }
+
+    #right-f a {
+        font-size: 1.1em;
+    }
+  } 
