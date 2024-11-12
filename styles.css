@@ -3,11 +3,9 @@
     font-family: "Open Sans";
 }
 body { 
-    display: flex;
-    flex-direction: column;
-    flex-wrap: row;
-    margin: 0;
-   
+   background-color: white;
+   margin: 0;
+   height: 999vh;
 }
 
 #topnav {
@@ -17,6 +15,7 @@ body {
     align-items: center;
     background-color: rgb(56, 62, 76);
     height: 7.5vh;
+    z-index: 999;
 }
 
 .navbutton { 
@@ -48,9 +47,8 @@ header {
     background-size: cover;
     background-position: center;
     height: 60vh;
-    /* z-index: -5; */
+    background-attachment: fixed;
     color: white;
-
 }
 
 header h1{
@@ -69,47 +67,418 @@ header p {
 }
 .main {
     display: flex;
-    margin-top: 25vh;
+
+    
 }
-.allcard-container-top { 
-    width: 60vw;
+.tcontainer-big { 
+    max-width: 100vw;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    height: 30vh;
+    margin-top: 4em;
+    height: fit-content;
+
 }
 
 .tcard-container {
-    width: 100%;
+    width: 55%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
-    flex-wrap: row;
+    justify-content: space-between;
+
 }
 
 .tcard {
-    width: 30%;
-    height: fit-content;
+    width: 31.33%;
+    height: 45vh;
     display: flex;
     flex-direction: column;
     flex-wrap: row;
     background-color: lightgray;
+
 }
 
 .tcard-img { 
     width: 100%;
 }
-
-#card1 h2 { 
+h2 {
+    font-weight: 600;
+    font-size: 1.3em;
+}
+.tcard h2 { 
     color: green;
+    margin-bottom: 0;
+}
+.tcard h2, .tcard p {
+    margin-left: 1vw;
+    margin-right: .5vw;
+}
+.tcard p {
+    font-weight: 300;
+}
+.tcard a { 
+    width: fit-content;
+    height: fit-content;
+    padding: .7em 1.4em;
+    border-radius: .25em;
+    color: white;
+    align-self: center;
+    font-weight: 500;
+    text-decoration: none;
 }
 
+#card1 a{
+    background-color: green;
+}
+
+#card2 a {
+    background-color:cornflowerblue;
+}
+#card3 a {
+    background-color:darkred;
+}
 #card2 h2 { 
-    color: blue;
+    color: cornflowerblue;
 }
 
 #card3 h2 { 
     color: grey;
+} 
+
+
+
+
+
+.tcontainer-big-p2 {
+    max-width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 4em;
+    height: fit-content;
 }
+
+.tcard-container-p2 {
+    width: 55%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.thcard {
+    width: 48%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: lightgray;
+
+}
+
+.thcard-img { 
+    width: 100%;
+}
+
+
+.thcard h2 { 
+    margin-bottom: 0;
+    align-self: center;
+}
+.thcard p {
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+.thcard a { 
+    width: fit-content;
+    height: fit-content;
+    padding: .7em 1.4em;
+    border-radius: .5em;
+    color: grey;
+    align-self: center;
+    font-weight: 400;
+    background-color: white;
+    text-decoration: none;
+    align-self: flex-end;
+    margin-right: 4vw;
+    margin-top: 2vh;
+    border-style: solid;
+    border-color: darkgrey;
+    border-width: 1px;
+}
+
+.long-service { 
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 0px 2px 2px black;
+    background-image: url(images/img13.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+    background-attachment: fixed;
+    text-align: center;
+    margin-top: 4em;
+}
+
+.long-service p, .long-service h2 {
+    max-width: 40%;
+}
+
+.long-service h2 { 
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+.bcontainer-big { 
+    max-width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 4em;
+    height: fit-content;
+
+}
+
+.bcard-container {
+    width: 55%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.bcard {
+    width: 22.5%;;
+    height: 48vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: row;
+    background-color: lightgray;
+
+}
+
+.bcard-img { 
+    width: 100%;
+}
+
+.bcard h2 { 
+    margin-bottom: 0;
+    align-self: center;
+    color: grey;
+}
+.bcard p {
+    margin-left: 1vw;
+    margin-right: .5vw;
+}
+.bcard p {
+    font-weight: 300;
+}
+.bcard a { 
+    width: fit-content;
+    height: fit-content;
+    padding: .7em 1.4em;
+    border-radius: .5em;
+    color: grey;
+    align-self: center;
+    font-weight: 500;
+    text-decoration: none;
+    background-color: white;
+    border-style: solid;
+    border-color: darkgrey;
+    border-width: 1px;
+}
+
+
+
+
+
+.bcontainer-big-p2 {
+    max-width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 4em;
+    height: fit-content;
+}
+
+.bcard-container-p2 {
+    width: 55%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bfcard {
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: lightgray;
+
+}
+
+.bfcard-img { 
+    width: 100%;
+}
+
+
+.bfcard h2 { 
+    margin-top: 3em;
+    margin-bottom: 0;
+    
+}
+.bfcard p, .bfcard h2{
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+.bfcard a { 
+    width: fit-content;
+    height: fit-content;
+    padding: .7em 1.4em;
+    border-radius: .5em;
+    color: grey;
+    align-self: center;
+    font-weight: 400;
+    background-color: white;
+    text-decoration: none;
+    align-self: flex-start;
+    margin-left: 1vw;
+    margin-top: 2vh;
+    border-style: solid;
+    border-color: darkgrey;
+    border-width: 1px;
+}
+
+
+
+.contact-container {
+    max-width: 100vw;
+    display: flex;
+    background-image: url(images/img14.jpg);
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    background-attachment: fixed;
+    text-align: center;
+    margin-top: 4em;
+}
+
+.contact {
+    max-width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.contact h2 {
+    
+    font-size: 1.7em;
+    color: white;
+    text-shadow: 0px 2px 2px black;
+}
+.contact h2, .contact p {
+    width: 100%;
+}
+
+.contact .idek {
+    
+    height: 10vh;
+    text-align: center;
+    align-self: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: .25em;
+}
+
+.idek p {
+    width: 90%;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+.forms {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#left-f {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+
+#right-f {
+    margin-left: 1.25vw;
+    width: 48%;
+    margin-top: .8em;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+.left-i {
+    margin-top: 1em;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: .25em;
+    color: black;
+    font-weight: 600;
+    padding: .25em;
+    border: none;
+    outline: none;
+}
+#Yourmessage { 
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: .25em;
+    padding-bottom: 6.3em;
+    border: none;
+    outline: none;
+    font-weight: 600;
+}
+
+
+
+
+#right-f a{
+    font-size: 1.2em;
+    margin-top: 1em;
+    width: fit-content;
+    height: fit-content;
+    background-color: rgb(38,38,40);
+    padding: .5em 1.5em;
+    text-decoration: none;
+    color:white;
+    border-radius: .5em;
+    
+}
+
+
